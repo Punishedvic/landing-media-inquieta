@@ -1,0 +1,352 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo--web {
+    position: absolute;
+    background-image: url("./img/fondomediainquieta.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    width: 40%;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+.nav--full {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    font-size: 1.3em;
+    box-sizing: border-box;
+}
+
+.front {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoprincipal {
+    height: 160px;
+    width: 162px;
+    border-radius: 100%;
+}
+
+.front--datos {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    font-family: Helvetica, sans-serif;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    font-size: 1.3em;
+    color: rgb(100, 100, 100);
+}
+
+.front--datos .soquetes {
+    position: relative;
+    height: 20px;
+    border-radius: 100%;
+    width: 20px;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: grey;
+    font-size: 2em;
+    margin-bottom: 2vh;
+}
+
+.boton--principal {
+    margin-top: 3vh;
+    padding: 25px;
+    background-color: rgb(199, 139, 255);
+    font-size: 1.3em;
+    border-radius: 10px;
+    color: black;
+}
+
+.boton--principal:hover {
+    background: linear-gradient(90deg, rgba(204, 109, 143, 1) 0%, rgba(192, 73, 255, 1) 100%);
+    color: white;
+}
+
+li a:hover {
+    text-decoration: underline solid #fcb2f6;
+    color: black;
+}
+
+.foto,
+.uno {
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    border-radius: 5%;
+    top: 13%;
+    left: 2%;
+    z-index: 2;
+}
+
+.dos {
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    border-radius: 5%;
+    top: 15%;
+    left: 77%;
+}
+
+.borde {
+    border: 5px pink solid;
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    top: 14%;
+    left: 3%;
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.fotodos {
+    border: 5px white solid;
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    top: 12%;
+    left: 78%;
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.tres {
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    border-radius: 5%;
+    top: 52%;
+    left: 9%;
+    z-index: 2;
+}
+
+.fototres {
+    border: 5px pink solid;
+    position: absolute;
+    height: 40vh;
+    width: 18vw;
+    top: 53%;
+    left: 10%;
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.soquetedeco {
+    position: absolute;
+    left: 80%;
+    top: 70%
+}
+
+.footerino {
+    padding: 7vh;
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #fcb2f6;
+    display: none;
+}
+
+.footerino img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.boton--instagram {
+    font-size: 1.3em;
+    background-color: white;
+}
+
+.boton--facebook {
+    font-size: 1.3em;
+    background-color: white;
+}
+
+
+/*MEDIA QUERIES */
+
+@media only screen and (min-width: 319px) and (max-width: 480px) {
+    footer {
+        display: flex;
+    }
+    .footerino {
+        display: flex;
+    }
+    .fondo--web {
+        position: absolute;
+        background-image: url("./img/fondomediainquieta.png");
+        width: 100%;
+        height: 300%;
+        background-size: contain;
+        top: 0;
+    }
+    nav {
+        width: 100%;
+    }
+    .logo img {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin-left: 3vh;
+    }
+    .navbar {
+        justify-content: space-between;
+        width: 80%;
+        font-size: 1.2em;
+    }
+    .logoprincipal {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+    .front--datos {
+        max-width: 100%;
+        height: 100px;
+        margin-right: 25%;
+        font-family: Helvetica, sans-serif;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3vh;
+        font-size: 1.05em;
+        color: rgb(100, 100, 100);
+        text-align: start;
+        padding: 5px 0 0 20px;
+    }
+    .front--datos .soquetes {
+        height: 20px;
+        width: 20px;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 2vh;
+    }
+    .soquetedeco {
+        position: relative;
+        left: 35%;
+        width: 80px;
+        margin-top: -10%;
+    }
+    .boton--principal {
+        margin-top: 20vh;
+        padding: 20px;
+        background-color: rgb(199, 139, 255);
+        font-size: 1.3em;
+        border-radius: 10px;
+        color: black;
+    }
+    .foto,
+    .uno {
+        position: relative;
+        display: inline-block;
+        margin-top: 8vh;
+        height: 50vh;
+        width: 60%;
+        left: 20%;
+        border-radius: 5%;
+        z-index: 2;
+    }
+    .dos {
+        position: relative;
+        height: 50vh;
+        width: 60%;
+        border-radius: 5%;
+        top: 15%;
+        left: 20%;
+    }
+    .borde {
+        border: 5px pink solid;
+        position: absolute;
+        height: 50vh;
+        width: 60%;
+        top: 41%;
+        left: 21%;
+        border-radius: 5%;
+        z-index: 1;
+    }
+    .fotodos {
+        border: 5px #fcb2f6 solid;
+        position: absolute;
+        height: 50vh;
+        width: 60%vw;
+        top: 61%;
+        left: 16.5%;
+        border-radius: 5%;
+        z-index: 1;
+    }
+    .tres {
+        position: relative;
+        height: 50vh;
+        width: 60%;
+        border-radius: 5%;
+        top: 52%;
+        left: 20%;
+        z-index: 2;
+    }
+    .fototres {
+        border: 5px pink solid;
+        position: absolute;
+        height: 50vh;
+        width: 60%;
+        top: 80.5%;
+        left: 20%;
+        border-radius: 5%;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {}
+
+@media only screen and (min-width: 1280px) and (max-width: 1441px) {}
